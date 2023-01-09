@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-"""
-contains the MyList class
+ns the MyList class
 """
 
 
