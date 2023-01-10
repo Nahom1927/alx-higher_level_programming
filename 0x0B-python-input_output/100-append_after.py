@@ -1,4 +1,5 @@
- a text file insertion function."""
+#!/usr/bin/python3
+"""Defines a text file insertion function."""
 
 
 def append_after(filename="", search_string="", new_string=""):
