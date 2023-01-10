@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-import sys
+mport sys
 
 
 def print_info():
