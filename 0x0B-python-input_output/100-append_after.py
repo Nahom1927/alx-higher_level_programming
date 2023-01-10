@@ -1,18 +1,18 @@
-ontains a function that inserts a line of text to a file.
-"""
+ a text file insertion function."""
 
 
 def append_after(filename="", search_string="", new_string=""):
+    """Insert text after each line containing a given string in a file.
+    Args:
+        filename (str): The name of the file.
+        search_string (str): The string to search for within the file.
+        new_string (str): The string to insert.
     """
-    Inserts a line of text to a file, after
-    each line containing a specific string.
-    """
-    out = ""
-    with open(filename, 'r') as f:
-        for line in f:
-            out += line
+    text = ""
+    with open(filename) as r:
+        for line in r:
+            text += line
             if search_string in line:
-                out += new_string
-
-    with open(filename, 'w') as f:
-        f.write(out)
+                text += new_string
+    with open(filename, "w") as w:
+        w.write(text)
